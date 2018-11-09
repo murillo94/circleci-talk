@@ -7,7 +7,7 @@
     "start": "mdx-deck deck.mdx",
     "html": "mdx-deck build deck.mdx -d docs/",
     "pdf": "mdx-deck pdf deck.mdx -d docs/",
-    "build": "npm run html && npm run pdf && node move-static.js",
+    "build": "npm run html && node move-static.js",
     "test": "jest"
   },
   "repository": {
