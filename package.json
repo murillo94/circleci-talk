@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "npm run clean && npm run static && npm run html && npm run pdf",
-    "clean": "rm -rf docs",
-    "static": "mkdir -p docs/images && cp -R images/ docs/images",
-    "html": "mdx-deck build deck.mdx -d docs",
-    "pdf": "mdx-deck pdf deck.mdx -d docs",
+    "html": "mdx-deck build deck.mdx -d docs/",
+    "pdf": "mdx-deck pdf deck.mdx -d docs/",
+    "build": "npm run html && npm run pdf && node move-static.js",
     "test": "jest"
   },
   "repository": {
@@ -23,6 +21,10 @@
   },
   "homepage": "https://github.com/murillo94/circleci-test#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "copy-dir": "^0.4.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "jest": "^23.6.0",
     "mdx-deck": "^1.7.7"
   },
