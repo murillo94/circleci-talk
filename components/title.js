@@ -1,8 +1,7 @@
 import React from 'react';
 
-export default ({ text }) => (
+const Title = () => (
   <div
-    className="author"
     style={{
       marginTop: 50
     }}
@@ -16,7 +15,9 @@ export default ({ text }) => (
         fontSize: '1.2em'
       }}
     >
-      {text}
+      Murillo de Miranda Pereira
     </span>
   </div>
 );
+
+export default Title;

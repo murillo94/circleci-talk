@@ -9,7 +9,7 @@ describe('sum', () => {
 
 describe('mul', () => {
   test('A multiplicação de dois valores deve ser o resultado esperado', () => {
-    expect(mul(4, 2)).toBe(8);
+    expect(mul(4, 2)).toBe(80);
     expect(mul(10, 3)).toBe(30);
   });
 });
