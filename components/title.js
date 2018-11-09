@@ -15,7 +15,7 @@ const Title = () => (
         fontSize: '1.2em'
       }}
     >
-      Murillo de Miranda Pereira
+      Murillo de Miranda Pereira teste
     </span>
   </div>
 );
