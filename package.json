@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
+    "build": "npm run html && node move-static.js",
     "html": "mdx-deck build deck.mdx -d docs/",
     "pdf": "mdx-deck pdf deck.mdx -d docs/",
-    "build": "npm run html && node move-static.js",
     "test": "jest"
   },
   "repository": {
