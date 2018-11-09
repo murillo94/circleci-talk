@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "mdx-deck deck.mdx",
     "build": "npm run clean && npm run static && npm run html && npm run pdf",
-    "clean": "rm -rf dist",
-    "static": "mkdir -p dist/images && cp -R images/ dist/images",
-    "html": "mdx-deck build deck.mdx -d dist",
-    "pdf": "mdx-deck pdf deck.mdx -d dist",
+    "clean": "rm -rf docs",
+    "static": "mkdir -p docs/images && cp -R images/ docs/images",
+    "html": "mdx-deck build deck.mdx -d docs",
+    "pdf": "mdx-deck pdf deck.mdx -d docs",
     "test": "jest"
   },
   "repository": {
