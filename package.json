@@ -1,0 +1,25 @@
+{
+  "name": "circleci-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murillo94/circleci-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murillo94/circleci-test/issues"
+  },
+  "homepage": "https://github.com/murillo94/circleci-test#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "mdx-deck": "^1.7.7"
+  },
+  "dependencies": {}
+}
