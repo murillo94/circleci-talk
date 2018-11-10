@@ -14,6 +14,6 @@ describe('title', () => {
 
   test('Verificando autor', () => {
     const wrapper = shallow(<Title />);
-    expect(wrapper.find('span').text()).toEqual('Murillo de Miranda Pereira teste');
+    expect(wrapper.find('span').text()).toEqual('Murillo de Miranda Pereira');
   });
 });
